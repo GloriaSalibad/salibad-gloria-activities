@@ -1,0 +1,65 @@
+body {
+    background-image: url('.jpg');
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+header {
+    background-color: blueviolet;
+    color: antiquewhite;
+    padding: 100px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 90%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (man-width: 600px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ANIMATION */
+
+@keyframes heart {
+    from { top: 40%}
+    to {top: 25%}
+}
+
+
+@keyframes heart {
+    from { right: 60%}
+    to {right: 50%}
+}
